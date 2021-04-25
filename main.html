@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Paradise</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+
+    <div class = "banner-image">
+        <br><br>
+            <h> Sound paradise&#169</h>
+            <br><br><br>
+            <div class = "topnav"></div>
+            <a href="aboutus.html">About Us</a>
+            <a href="payment.html">Payment</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="membership.html">Membership</a>
+            <br>
+        </div>
+    </div>
+
+        <div class ="sidenav">
+            <br><br><br><br><br><br><br><br>
+             <a href="index.html">Home</a>
+             <a href="testsound.html">Experience</a>
+             <a href="price.html">By Price</a>
+             <div class="dropdown">
+                 <a>By Brand</a>
+                    <div class="dropdown-content">
+                      <a href="sony.html">Sony&#169</a>
+                      <a href="razer.html">Razer&#169</a>
+                      <a href="bose.html">Bose&#169</a>
+                    </div>
+                  </div>
+             <div class="dropdown">
+                    <a>By Category</a>>
+                    <div class="dropdown-content">
+                      <a href="wireless.html">Wireless</a>
+                      <a href="sports.html">Sports</a>
+                      <a href="noisecancel.html">Noise Cancelling</a>
+                    </div>
+                  </div>
+            
+        </div>
+<body>
+    <form name=myform >
+        <p>First Name : <input type="text" name=firstname placeholder="Please enter"> </p>
+        <p>Last Name : <input type="text" name=lastname placeholder="Please enter"></p>
+        <p>Please choose model : 
+          <select name="model">
+            <option value="Bose model B1011 - $399.99">Bose model B1011 - $399.99</option>
+            <option value="Bose model B3474 - $299.99">Bose model B3474 - $299.99</option>
+            <option value="Sony model S1011 - $299.99">Sony model S1011 - $299.99</option>
+            <option value="Sony model S126 - $199.99">Sony model S126 - $199.99</option>
+            <option value="Razer model R1011 - $199.99">Razer model R1011 - $199.99</option>
+            <option value="Razer model R954 - $99.99">Razer model R954 - $99.99</option>
+            
+            
+          </select>
+          </p>
+        <p><input type="Submit" onclick='myFunction(); return false'></p>
+      </form>
+    
+    <script>
+        function myFunction() 
+        {
+              var a =" Thank you for the purchase and we shall contact you shortly."
+              var x = document.myform.firstname.value;
+              var y = document.myform.lastname.value;
+              var z = "You have selected " + document.myform.model.value +" headphones!";
+              document.getElementById("demo").innerHTML = "Hello " + x + " " + y +". " + z +" " + a;
+            }   
+    </script>
+    
+    <p id="demo" ></p>
+</body>
+
+</html>
